@@ -1,0 +1,32 @@
+********************* ATM PROJECT ALGORITHM ***************************
+1. Start the program by creating an instance of the ATMProject class.
+2. Set the title of the window to "ATM Project" and configure the layout.
+3. Create the necessary components such as buttons, labels, and the frame.
+4. Attach action listeners to the buttons to handle user interactions.
+5. Display the initial balance as $0.00 on the balance label.
+6. When the "Check Balance" button is clicked:
+   - If the PIN is inserted, display a message with the current balance.
+   - If the PIN is not inserted, prompt the user to insert the PIN first.
+7. When the "Deposit" button is clicked:
+   - If the PIN is inserted, prompt the user to enter the amount to deposit.
+   - Update the balance by adding the deposited amount.
+   - Display a success message with the deposited amount.
+   - Update the balance label with the new balance.
+   - If the PIN is not inserted, prompt the user to insert the PIN first.
+8. When the "Withdraw" button is clicked:
+   - If the PIN is inserted, prompt the user to enter the amount to withdraw.
+   - If the amount is less than $20, display an error message.
+   - If the amount is valid and there are sufficient funds:
+     - Update the balance by subtracting the withdrawn amount.
+     - Display a success message with the withdrawn amount.
+     - Update the balance label with the new balance.
+   - If the amount is valid but there are insufficient funds, display an error message.
+   - If the PIN is not inserted, prompt the user to insert the PIN first.
+9. When the "Insert PIN" button is clicked:
+   - Prompt the user to enter their 4-digit PIN.
+   - If the PIN is valid (e.g., "1234"), set the isPINInserted flag to true.
+   - Display a success message indicating that the PIN was inserted successfully.
+   - If the PIN is invalid, display an error message.
+10. When the "Exit" button is clicked:
+    - Prompt the user to confirm if they want to exit.
+    - If the user confirms, terminate the program.
